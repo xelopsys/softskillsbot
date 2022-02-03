@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js",
+    "start": "node index.js",
     "fmt": "prettier --check --write \"**/*.js\""
   },
   "dependencies": {
