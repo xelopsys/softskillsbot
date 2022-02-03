@@ -1,0 +1,20 @@
+{
+  "name": "quizzer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "fmt": "prettier --check --write \"**/*.js\""
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "dotenv": "^15.0.0",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  }
+}
