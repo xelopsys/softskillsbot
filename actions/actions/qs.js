@@ -29,12 +29,12 @@ composer.action(/next_(.+)_(.+)/gi, async (ctx) => {
 
     console.log(result)
 
-    let sum =0
-    for (let i in result.answer){
-      sum+=result.answer[i]
-    }
-    console.log(Math.floor(sum/3))
-
+    // let sum =0
+    // for (let i in result.answer){
+    //   sum+=result.answer[i]
+    // }
+    // console.log(Math.floor(sum/3))
+    //
 
 
 
