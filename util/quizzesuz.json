@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "nastoychivost": "1",
+    "question": "Menga harakat qilishni boshlash uchun uzoq vaqt kerak bo'ladi",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 2,
+    "nastoychivost": "1",
+    "question": "Men bir nechta ishni boshlashim va ularning hech birini tugatolmasligim mumkin.",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 3,
+    "nastoychivost": "1",
+    "question": "Menga boshlagan ishimni oxiriga yetkazish menga ba’zan qiyin.",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 4,
+    "nastoychivost": "1",
+    "question": "Men ish qilish o'rniga ko'pincha vaqtni behuda sarflayman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 5,
+    "nastoychivost": "1",
+    "question": "Ba’zan ishlarimni tartibga solishda qiynalaman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 6,
+    "planomernost": "1",
+    "question": "Men har kuni ishimni rejalashtiraman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 7,
+    "planomernost": "1",
+    "question": "Men odatda kun uchun dasturni rejalashtiraman va uni bajarishga harakat qilaman.",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 8,
+    "planomernost": "1",
+    "question": "Men kelgusi kunni oldindan rejalashtiraman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 9,
+    "planomernost": "1",
+    "question": "Men kundalik faoliyatimni muayyan tamoyillar asosida rejalashtiraman.",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 10,
+    "fiksatsiya": "1",
+    "question": "Kutilmagan narsalar meni g'azablantiradi va odatdagi jadvalimdan chiqarib yuboradi",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 11,
+    "fiksatsiya": "1",
+    "question": "Men boshlagan biznesimdan bosh torta olmayman, garchi bu men uchun juda qiyin bo'lsa ham”",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 12,
+    "fiksatsiya": "1",
+    "question": "Agar oldingi ishni tugatmagan bo'lsam, boshqa ishga o'ta olmayman.",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 13,
+    "fiksatsiya": "1",
+    "question": "Ba'zida tugallanmagan ishni eslab uxlay olmayman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 14,
+    "fiksatsiya": "1",
+    "question": "Agar biror narsani tugatmagan bo'lsam, u mening boshimdan chiqmaydi.",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 15,
+    "tseleustremlyonnost": "1",
+    "question": "Men nima xoxlashimni bilaman va unga erishish uchun hamma narsani qilaman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 16,
+    "tseleustremlyonnost": "1",
+    "question": "Men o'zimni maqsad kabi intiluvchi odam deb hisoblayman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 17,
+    "tseleustremlyonnost": "1",
+    "question": "Menda intilish kerak bo'lgan maqsad bor",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 18,
+    "tseleustremlyonnost": "1",
+    "question": "Mening hayotim ma'lum natijalarga erishishga qaratilgan",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 19,
+    "tseleustremlyonnost": "1",
+    "question": "Men hech narsaga intilmayman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 20,
+    "tseleustremlyonnost": "1",
+    "question": "Mening hayotdagi asosiy maqsadim bor",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 21,
+    "orientatsiya": "1",
+    "question": "Men uchun nima bo'lishi yoki bo'lganligi emas, balki hozir nima qilayotganim va boshdan kechirayotganim muhimroq",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 22,
+    "orientatsiya": "1",
+    "question": "Men o'zimni \"shu erda va hozirda\" yashaydigan odam deb hisoblayman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 23,
+    "samoorganizatsiya": "1",
+    "question": "Men kundalik yuritishni va unda men bilan nima sodir bo'lganini yozib borishni yaxshi ko'raman.",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 24,
+    "samoorganizatsiya": "1",
+    "question": "Men kundalik va boshqa vaqtni rejalashtirish vositalaridan foydalanishni yaxshi ko'raman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  },
+  {
+    "id": 25,
+    "samoorganizatsiya": "1",
+    "question": "Men ish yakunida hisobotlarini yozishni yaxshi ko'raman",
+    "answer": [1, 2, 3, 4, 5, 6, 7]
+  }
+]
