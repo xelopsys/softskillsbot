@@ -1,16 +1,16 @@
-import readeruz from "../../util/jsonuz.js";
-import { addAnswer, clearUser, fixedData } from "../../util/customDB.js";
-import { composer, middleware } from "../../core/core.js";
-import { message } from "../../util/resources.js";
+import reader from "../../../util/jsonuz.js";
+import { addAnswer, clearUser, fixedData } from "../../../util/customDB.js";
+import { composer, middleware } from "../../../core/core.js";
+import { message } from "../../../util/resources.js";
 import telegraf from "telegraf";
 const { Markup } = telegraf;
 
-composer.action(/uznext_(.+)_(.+)/gi, async (ctx) => {
+composer.action(/uzf_(.+)_(.+)/ui, async (ctx) => {
   const isInit = parseInt(ctx.match[1]) === 0;
   const current = isInit ? 1 : parseInt(ctx.match[1]);
   const next = current + 1;
 
-  const database = await readeruz();
+  const database = await reader();
   const datasets = database[current - 1];
   console.log(ctx.match[2]);
   if (!isInit) {
@@ -74,69 +74,69 @@ composer.action(/uznext_(.+)_(.+)/gi, async (ctx) => {
     }
 
     const resultN = () => {
-      if (sum < 14.42) {
+      if (sum < 11.98) {
         return `Boshlagan ishni mantiqiy yakuniga yetkazish uchun irodali sa'y-harakatlar qilish qiyin bo'lishi mumkin, sizni begona narsalar bilan chalg'itishga moyil bo'lasiz.`;
       }
-      if (sum > 14.42 && sum <= 19.03) {
+      if (sum > 11.98 && sum <= 17.41) {
         return `Siz juda tartibli va tuzilgansiz, irodali harakatlarga qodirsiz, garchi siz boshlagan ishni tashlab, siz uchun muhimroq ishlarga o'tishingiz mumkin.`;
       }
-      if (sum > 19.03) {
+      if (sum > 17.41) {
         return `Sizni kuchli irodali va uyushqoq, xulq-atvor faoliyatini tizimlashtirib, iroda kuchi bilan boshlagan ishni oxiriga yetkaza oladigan shaxs deb ta’riflash mumkin.`;
       }
     };
     const resultP = () => {
-      if (sump <= 14.42) {
+      if (sump <= 11.98) {
         return `Faoliyatingizni rejalashtirish va ishlab chiqilgan rejani muntazam ravishda bajarish siz uchun qiyin bo'lishi mumkin.`;
       }
-      if (sump > 14.42 && sump <= 19.03) {
+      if (sump > 11.98 && sump <= 17.41) {
         return `Siz o'z maqsadlaringizga erishishda aniq rejalar ishlab chiqishga va ularga muntazam ravishda amal qilishga o'rtacha darajada moyilsiz.`;
       }
-      if (sump > 19.03) {
+      if (sump > 17.41) {
         return `Siz juda tizimlisiz, maqsadlaringizga doimiy ravishda erishishni afzal ko'rasiz va taktik rejalashtirish ko'nikmalariga egasiz.`;
       }
     };
     const resultF = () => {
-      if (sumf <= 14.42) {
+      if (sumf <= 11.98) {
         return `Siz yangi faoliyat va munosabatlarga osongina o'tadigan moslashuvchan odamsiz. Ba'zi hollarda, siz etarli darajada bog'lanmagan va izchil deb hisoblanasiz.`;
       }
-      if (sumf > 14.42 && sumf <= 19.03) {
+      if (sumf > 11.98 && sumf <= 17.41) {
         return `Siz o'z faoliyatingizni rejalashtirishda va munosabatlarni o'rnatishda juda moslashuvchan odamsiz, ammo siz o'z zimmangizga olgan majburiyatlarni bajarishga intilasiz.`;
       }
-      if (sumf > 19.03) {
+      if (sumf > 17.41) {
         return `Siz ijrochi va majburiy shaxssiz, boshlagan ishni oxiriga etkazish uchun har tomonlama harakat qilasiz. Ehtimol, siz o'z faoliyatingizni rejalashtirish va munosabatlarni o'rnatishda etarlicha moslashuvchan bo'lmasligingiz mumkin. `;
       }
     };
     const resultT = () => {
-      if (sumt <= 14.42) {
+      if (sumt <= 11.98) {
         return `Siz har doim ham o'z maqsadlaringizni aniq ko'ra olmaysiz yoki o'zingiz uchun aniq maqsadlar qo'yishga moyil emassiz, maqsadli ravishda biror narsaga intilish va maqsadlaringizga erishish uchun harakat qilish tabiiy bo'lmasligi mumkin.`;
       }
-      if (sumt > 14.42 && sumt <= 19.03) {
+      if (sumt > 11.98 && sumt <= 17.41) {
         return `Siz o'z maqsadlaringizni juda yaxshi ko'rasiz va tushunasiz va ularga erisha olasiz, garchi hayotingizda barcha harakatlaringiz sizga tushunarli bo'lgan maqsadlarga erishishga qaratilgan bo'lmagan davrlar bo'lishi mumkin.`;
       }
-      if (sumt > 19.03) {
+      if (sumt > 17.41) {
         return `Siz maqsadli va maqsadlisiz, nima istayotganingizni va nimaga intilayotganingizni bilasiz, maqsadlaringiz sari intilasiz.`;
       }
     };
 
     const resultO = () => {
-      if (sumo <= 14.42) {
+      if (sumo <= 11.98) {
         return `Siz o'zingizning psixologik o'tmishingizda yoki kelajagingizda bu erda va hozirdan ko'ra ko'proq qiymat topasiz.`;
       }
-      if (sumo > 14.42 && sumo <= 19.03) {
+      if (sumo > 11.98 && sumo <= 17.41) {
         return `Siz o'zingizning psixologik o'tmishingizni va kelajagingizni, ayni paytda siz bilan nima sodir bo'layotganini ko'rish va qadrlash imkoniyatiga egasiz.`;
       }
-      if (sumo > 19.03) {
+      if (sumo > 17.41) {
         return `Siz hozirgi vaqtda siz bilan nima sodir bo'layotganiga e'tibor qaratishga moyilsiz; siz uchun tajriba va "bu erda va hozir" sodir bo'layotgan narsalar alohida ahamiyatga ega.`;
       }
     };
     const resultS = () => {
-      if (sums <= 14.42) {
+      if (sums <= 11.98) {
         return `Faoliyatingizni tashkil qilishda siz o'z-o'zini tashkil qilish darajangizga salbiy ta'sir ko'rsatishi mumkin bo'lgan vaqtni boshqarishda yordam beradigan tashqi vositalardan foydalanishga moyil emassiz.`;
       }
-      if (sums > 14.42 && sums <= 19.03) {
+      if (sums > 11.98 && sums <= 17.41) {
         return `Ishingizni va shaxsiy vaqtingizni rejalashtirishda siz ham yordamchi vositalarga (kundalik, daftar, rejalashtirish) va tabiiy tashkilotingizga tayanishingiz mumkin.`;
       }
-      if (sums > 19.03) {
+      if (sums > 17.41) {
         return `Sizda o'z-o'zini tashkil qilish darajasi yuqori, rejalashtirishda siz yordamchi vositalardan (kundalik, rejalashtirish, vaqtni rejalashtirish) foydalanishga moyilsiz.`;
       }
     };
