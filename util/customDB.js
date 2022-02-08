@@ -1,6 +1,6 @@
 const answers = {
   0: {
-    from: "@genemator",
+    from: "@xelopsys",
     answer: [],
   },
 };
