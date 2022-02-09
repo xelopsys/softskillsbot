@@ -20,7 +20,7 @@ composer.start(async (ctx) => {
     .then((r) => console.log(r));
 });
 
-composer.hears("Русскый 🇷🇺", async (ctx) => {
+composer.hears("Русский 🇷🇺", async (ctx) => {
   // let user = ctx.from.id
   // let text = ctx.message.text
   // console.log(text)
