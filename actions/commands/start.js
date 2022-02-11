@@ -102,7 +102,7 @@ composer.hears("Русский 🇷🇺", async (ctx) => {
   //     })
   //   )
   //   .then((r) => console.log(r));
-  // const text = ctx.message.text;
+  const text = ctx.message.text;
   // console.log(text)
 
   //         `Пожалуйста, отправляйте информацию в следующем порядке:
