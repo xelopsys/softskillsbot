@@ -12,12 +12,12 @@ composer.action(/next_(.+)_(.+)/gi, async (ctx) => {
 
   const database = await reader();
   const datasets = database[current - 1];
-  console.log(ctx.match[2]);
+  // console.log(ctx.match[2]);
   if (!isInit) {
     const responseDs = database[current - 2]["answer"];
     const response = responseDs[parseInt(ctx.match[2])];
 
-    console.log("adding", response);
+    // console.log("adding", response);
 
     await addAnswer(ctx.from.id, ctx.from.username, response);
   }
@@ -27,7 +27,7 @@ composer.action(/next_(.+)_(.+)/gi, async (ctx) => {
     // Show user responses and then clear
     const result = await fixedData(ctx.from.id);
 
-    console.log(result);
+    // console.log(result);
 
     ////////////////////////
 

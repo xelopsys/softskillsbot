@@ -5,7 +5,7 @@ import { message } from "../../../util/resources.js";
 import telegraf from "telegraf";
 const { Markup } = telegraf;
 
-composer.action(/uzf_(.+)_(.+)/ui, async (ctx) => {
+composer.action(/uzf_(.+)_(.+)/iu, async (ctx) => {
   const isInit = parseInt(ctx.match[1]) === 0;
   const current = isInit ? 1 : parseInt(ctx.match[1]);
   const next = current + 1;
@@ -17,7 +17,7 @@ composer.action(/uzf_(.+)_(.+)/ui, async (ctx) => {
     const responseDs = database[current - 2]["answer"];
     const response = responseDs[parseInt(ctx.match[2])];
 
-    console.log("adding", response);
+    // console.log("adding", response);
 
     await addAnswer(ctx.from.id, ctx.from.username, response);
   }
@@ -27,7 +27,7 @@ composer.action(/uzf_(.+)_(.+)/ui, async (ctx) => {
     // Show user responses and then clear
     const result = await fixedData(ctx.from.id);
 
-    console.log(result);
+    // console.log(result);
 
     ////////////////////////
 
@@ -182,7 +182,7 @@ composer.action(/uzf_(.+)_(.+)/ui, async (ctx) => {
 
   const keyboard = [];
   datasets.answer.map((item, index) =>
-    keyboard.push([Markup.callbackButton(item, `next_${next}_${index}`)])
+    keyboard.push([Markup.callbackButton(item, `uzf_${next}_${index}`)])
   );
 
   await ctx.editMessageText(message(datasets.question, datasets.id), {

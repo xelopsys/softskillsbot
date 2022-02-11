@@ -1,2 +1,2 @@
-import './qsuz'
-import "./qsuzf"
+import "./qsuz";
+import "./qsuzf";

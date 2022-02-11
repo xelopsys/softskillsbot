@@ -5,19 +5,19 @@ import { message } from "../../util/resources.js";
 import telegraf from "telegraf";
 const { Markup } = telegraf;
 
-composer.action(/fnext_(.+)_(.+)/gi, async (ctx) => {
+composer.action(/next_(.+)_(.+)/gi, async (ctx) => {
   const isInit = parseInt(ctx.match[1]) === 0;
   const current = isInit ? 1 : parseInt(ctx.match[1]);
   const next = current + 1;
 
   const database = await reader();
   const datasets = database[current - 1];
-  console.log(ctx.match[2]);
+  // console.log(ctx.match[2]);
   if (!isInit) {
     const responseDs = database[current - 2]["answer"];
     const response = responseDs[parseInt(ctx.match[2])];
 
-    console.log("adding", response);
+    // console.log("adding", response);
 
     await addAnswer(ctx.from.id, ctx.from.username, response);
   }
@@ -27,7 +27,7 @@ composer.action(/fnext_(.+)_(.+)/gi, async (ctx) => {
     // Show user responses and then clear
     const result = await fixedData(ctx.from.id);
 
-    console.log(result);
+    // console.log(result);
 
     ////////////////////////
 

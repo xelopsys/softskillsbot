@@ -17,7 +17,7 @@ composer.hears("женщина", async (ctx) => {
   await ctx.replyWithHTML("<b>Вы готовы начать тест?</b>", {
     reply_markup: Markup.inlineKeyboard([
       [
-        Markup.callbackButton(`я готовa`, `fnext_0_0`),
+        Markup.callbackButton(`я готовa`, `next_0_0`),
         Markup.callbackButton(`я не готовa`, `not_ready`),
       ],
     ]),
@@ -37,7 +37,7 @@ composer.hears("ayol", async (ctx) => {
   await ctx.replyWithHTML("<b>Testni boshlashga tayyormisiz?</b>", {
     reply_markup: Markup.inlineKeyboard([
       [
-        Markup.callbackButton(`Men tayyorman`, `uzf_0_0`),
+        Markup.callbackButton(`Men tayyorman`, `uz_0_0`),
         Markup.callbackButton(`Men tayyor emasman`, `not_ready`),
       ],
     ]),
