@@ -5,7 +5,7 @@ import { message } from "../../../util/resources.js";
 import telegraf from "telegraf";
 const { Markup } = telegraf;
 
-composer.action(/uzf_(.+)_(.+)/iu, async (ctx) => {
+composer.action(/uzf_(.+)_(.+)/gi, async (ctx) => {
   const isInit = parseInt(ctx.match[1]) === 0;
   const current = isInit ? 1 : parseInt(ctx.match[1]);
   const next = current + 1;
